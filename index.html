@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <script src=main.js></script>
+</head>
+<body>
+<br>
+<br>
+<div class="container">
+    <h1>Triangle Area Calculator</h1>
+    <img src="triangle.jpeg">
+    <form>
+        <br>
+        <label for="base">Base</label>
+        <br>
+        <input type="number" id="base" class=" form-control">
+        <br>
+
+        <label for="height">Height</label>
+        <br>
+        <input type="number" id="height" class="form-control">
+        <br>
+
+        <label for="area">Area</label>
+        <br>
+        <input type="number" id="area" class="form-control" readonly id="area">
+        <br>
+            <!-- <p id="answer">The sum of the two variables is: </p> -->
+            <button type="button" class="btn btn-primary" onclick=" 
+            getSum()">Calculate</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.reload()">Reload</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<script>
+    function getSum(){
+        let bvalue = Number(document.getElementById("base").value);
+        let hvalue = Number(document.getElementById("height").value);
+        let area = 1/2 * bvalue * hvalue;
+        document.getElementById("area").value=  area;
+    }
+</script>
+</body>
+</html>
