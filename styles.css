@@ -13,10 +13,12 @@ body {
     text-align:center;
     border: 10px solid #4573c2;
     border-radius: 10px;
+    text-align: left;
 }
 
 h1{
     color:rgb(83, 95, 184);
+    text-align: center;
 }
 img {
   width: 50%;
@@ -26,6 +28,9 @@ img {
 h6{
   text-align: left;
 }
+
+
+
 
 
 
