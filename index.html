@@ -9,47 +9,45 @@
      <!-- Bootstrap -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-      <script src=main.js></script>
+      <script src="main.js"></script>
 </head>
 <body>
 <br>
 <br>
 <div class="container">
-    <h1>Triangle Area Calculator</h1>
-    <img src="triangle.jpeg">
+    <h1>🎬 Cine Sophia Tickets 🎬</h1>
+    <hr>
     <form>
-        <br>
-        <label for="base">Base</label>
-        <br>
-        <input type="number" id="base" class=" form-control">
-        <br>
-
-        <label for="height">Height</label>
-        <br>
-        <input type="number" id="height" class="form-control">
-        <br>
-
-        <label for="area">Area</label>
-        <br>
-        <input type="number" id="area" class="form-control" readonly id="area">
-        <br>
+        <h6>Student Details</h6>
+            <label for="fname">Full Name</label>
+            <br>
+            <input type="text" id="fname" class=" form-control">
+            <br>
+            <h6>Ticket Selection</h6>
+            <label for="qty">Quantity (250.00 ₱ each) </label>
+            <br>
+            <input type="number" value= "0" id="qty" min="0" class="form-control">
+            <br>
+            <h6>Payment Details:</h6>
+            <label for="subtotal">Subtotal</label>
+            <br>
+            <input type="text" id="subtotal" class="form-control" readonly value="0">
+            <br>
+            <label for="admin$fee">Admin Fee</label>
+            <br>
+            <input type="text" id="admin$fee" class="form-control" readonly value="50">
+            <br>
+            <label for="total">Total</label>
+            <br>
+            <input type="text" id="total" class="form-control" readonly value="0">
+            <br>
             <!-- <p id="answer">The sum of the two variables is: </p> -->
             <button type="button" class="btn btn-primary" onclick=" 
-            getSum()">Calculate</button>
-            <button type="button" class="btn btn-primary" onclick="window.location.reload()">Reload</button>
+            getTotal()">Total</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.reload()">Reset</button>
     </form>
 </div>
 <br>
 <br>
-<br>
-<br>
-<script>
-    function getSum(){
-        let bvalue = Number(document.getElementById("base").value);
-        let hvalue = Number(document.getElementById("height").value);
-        let area = 1/2 * bvalue * hvalue;
-        document.getElementById("area").value=  area;
-    }
-</script>
 </body>
 </html>
